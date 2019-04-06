@@ -1,0 +1,9 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+ int a,b,c;
+  printf("a=%d, b=%d, c=%",5,10,15);
+  getch();
+}  
+ 
