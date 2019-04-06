@@ -1,0 +1,27 @@
+#include<stdio.h>
+
+void input(int *a, int *b, int *c);
+void output(int e); 
+int compare(int x,int y, int z);
+
+void main()
+{int a,b,c,d;
+ 
+ input(&a,&b,&c);
+ e=compare(a,b,c);
+ output(a,b,c,e);
+
+}
+
+void input(int *a, int *b, int *c)
+{printf("Enter three numbers\n");
+scanf("%d %d %d",a,b,c);
+}
+
+int compare(int x, int y, int z)
+{if(a>b)
+  {if(a>c)
+     return a;
+      break;
+  }
+ if() 
