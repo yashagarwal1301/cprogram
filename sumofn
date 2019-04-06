@@ -1,1 +1,37 @@
+#include<stdio.h>
+int s;
+void input(int *p, int *n);
+int sum(int *p, int *n);
+void output(int p, int s);
 
+void main()
+{input(&p, &n);
+ s=sum(&p, &n);
+ output(p,s);
+}
+
+void input(int *p, int *n)
+{int i,a[10],z=0;
+ printf("Enter the size of array\n");
+ scanf("%d",n);
+ p=&a[0];
+ printf("Enter the elements\n");
+ for(i=0;i<n;i++)
+  {scanf("%d\t",*p);
+   p++;
+  } 
+}
+
+int sum(int *p, int *n)
+{int i;
+ for(i=0;i<n;i++)
+  {z+=*p;
+   p++;
+  }
+ return z;
+}
+
+void output(int p, int s)
+{int i;
+ for(i=0;i<n)}
+  
