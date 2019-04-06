@@ -2,8 +2,8 @@
 #include<conio.h>
 void main()
 {
- int a,b,c,d;
-  printf("a=%d, b=%d, c=%",5,10,15,20);
+ int a,b,c,e;
+  printf("a=%d, b=%d, c=%d, e=%d",5,10,15,20);
   getch();
 }  
  
