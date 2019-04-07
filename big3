@@ -1,42 +1,44 @@
 #include<stdio.h>
 
-void input(int a, int b, int c);
+void input(int *a, int *b, int *c);
 void output(int e); 
-int compare(int x,int y, int z);
+int compare(int a,int b, int c);
 
 void main()
-{int a,b,c,d,e;
+{int a,b,c,e;
  
- input(a,b,c);
+ input(&a,&b,&c);
  e=compare(a,b,c);
  output(e);
 
 }
 
-void input(int a, int b, int c)
-{printf("Enter three numbers\n");
-scanf("%d %d %d",&a,&b,&c);
+void input(int *a, int *b, int *c)
+{ printf("Enter three numbers\n"); 
+  scanf("%d %d %d",a,b,c);
 }
 
-int compare(int x, int y, int z)
-{int big;
+int compare(int a, int b, int c)
+{int big=0;
 
  if(a>b)
   {if(a>c)
      big=a;
-  }
- if(b>a)
-  {if(b>c)
-     big=b;
-  } 
- if(c>a)
-  {if(c>b)
+   if(c>a)
      big=c;
   }
+
+ if(b>c)
+     big=b;
+      
+      
+  if(c>b)
+     big=c;
+  
   
   return big;
 }  
 
 void output(int e)
-{printf("Biggest number is %d",e);
+{ printf("Biggest number is %d",e);
 }
