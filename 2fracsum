@@ -1,0 +1,32 @@
+#include<stdio.h>
+
+void input(int *n1,int *n2,int *d1,int *d2);
+void sum(int n1,int n2,int d1,int d2,int *a1,int *a2);
+void output(int a1,int a2);
+
+void main()
+{int n1,n2,d1,d2,a1,a2;
+
+ input(&n1,&n2,&d1,&d2);
+ sum(n1,n2,d1,d2,&a1,&a2);
+ output(a1,a2);
+
+}
+
+void input(int *n1,int *n2,int *d1,int *d2)
+{
+    printf("Enter the expression\n");
+    scanf("%d/%d + %d/%d",n1,d1,n2,d2);
+}
+
+void sum(int n1,int n2,int d1,int d2,int *a1,int *a2)
+{
+    *a1=(n1*d2)+(n2*d1);
+    *a2=d1*d2;
+}
+
+
+
+void output(int a1,int a2)
+{ printf("Sum is %d/%d",a1,a2);
+ }
